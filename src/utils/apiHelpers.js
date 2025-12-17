@@ -17,3 +17,10 @@ export const fetchForecast = async (source, spotId = null) => {
   if (!response.ok) throw new Error('Failed to load forecast for selected source');
   return response.json();
 };
+
+// Fetch specific forecast data for a spot from a selected source
+export const fetchReports = async () => {
+  const response = await fetch(`${API_BASE}/reports`);
+  if (!response.ok) throw new Error('Failed to load reports');
+  return response.json();
+};

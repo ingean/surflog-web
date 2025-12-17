@@ -3,6 +3,7 @@ import React from 'react';
 import { Box, Typography, Breadcrumbs, Link, Toolbar } from '@mui/material';
 import { useSelection } from '../hooks/useSelection';
 import SpotContent from './SpotContent';
+import ReportsContent from './reports/ReportsContent';
 
 const drawerWidth = 240;
 
@@ -35,6 +36,7 @@ const MainContent = () => {
       </Breadcrumbs>
 
       <SpotContent />
+      <ReportsContent />
     </Box>
   );
 };
